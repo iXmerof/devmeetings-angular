@@ -1,6 +1,7 @@
 <h2>Lista produktow</h2>
+<input class="filter" type="text" placeholder="search" [formControl]="searchInput" />
 <div>
-  <div *ngFor="let product of products">
+  <div *ngFor="let product of (filteredProducts$ | async )">
     <app-product [product]="product"></app-product>
   </div>
 </div>
