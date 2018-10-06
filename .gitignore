@@ -1,0 +1,6 @@
+**/node_modules
+**/dp_keys
+**/bin
+**/obj
+**/.vs
+**/dist
