@@ -1,9 +1,14 @@
 .tile {
     border: 1px solid black;
     width: 200px;
-    height: 100px;
+    height: 120px;
     overflow: hidden;
     margin: 20px;
     padding: 5px;
     float: left;    
+}
+
+h6 {
+    padding: 5px;
+    margin: 0px;
 }

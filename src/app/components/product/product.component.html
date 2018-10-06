@@ -1,6 +1,12 @@
-<div class="tile">
+<mat-card class="tile">
   
-    <h3>Produkt: {{ product.name }}</h3>
+    <h4>Produkt: {{ product.name }}</h4>
   
   {{ product.description }}
-</div>
+
+  <hr />
+  
+  <h6>    
+    <span *ngFor="let tag of product.tags">{{tag}}, </span>
+  </h6>
+</mat-card>

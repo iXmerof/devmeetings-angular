@@ -5,19 +5,9 @@
   </h1>
 </div>
 
-<h2 style="color: orange;">Wyroznione</h2>
-<div>
-  <div *ngFor="let product of products">    
-    <app-product [product]="product" *ngIf="product.isPromoted"></app-product>
-  </div>
-</div>
+<app-list-of-promoted-products [products]="promotedProducts"></app-list-of-promoted-products>
 
 <br clear="both" />
 
-<h2>Lista produktow</h2>
-<div>
-  <div *ngFor="let product of products">
-    <app-product [product]="product"></app-product>
-  </div>
-</div>
+<app-list-of-products [products]="products"></app-list-of-products>
 

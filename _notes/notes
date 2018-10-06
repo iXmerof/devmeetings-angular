@@ -41,7 +41,7 @@ szybka konwersja obiektu do bool:
 
 #Angular basics
 
-nazwy selektorow w komponentach/dyrektywach 'snake case'
+nazwy selektorow w komponentach/dyrektywach 'snake case' lub 'kebab-case'
     co robia selektroy z nazwa w nawiasach kwadratowych?
 
 komponenty naley dodawac do modulu, w polu 'declarations'
