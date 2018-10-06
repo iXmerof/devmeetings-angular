@@ -1,0 +1,60 @@
+#Typescript basics
+
+kapke.github.io/angular2-shop/program-devmeeting
+
+type MyType = string | number;
+let num: Num = 2;
+let num = 2;
+num = 2;
+
+
+let i const
+    deklaracje zmiennych z ES6
+    typescript domyslnie kompiluje sie do ES5, a tam sa tylko vary
+
+interfejsy
+
+    interface Person {
+        person: Person;
+        lastName: string;
+        age?: number; <- ze znakiem zapytania ustawia pole jako opcjonalne
+    }
+
+    let Person: Person = {
+        //wtedy linter zacznie podpowiadac skladnie - pokrzyczy o brakujacych polach
+    }
+
+klasy
+
+    class Programmer implements Person {
+        //pola/propercje
+
+        constructor() {}
+    }
+
+    w klasach wszystko jest domyslnie PUBLICZNE
+
+
+szybka konwersja obiektu do bool:
+!!<obiekt>
+!!undefined <- podwjne zaprzeczenie najpierw konwertuje na bool a potem nadaje jego wartosc
+
+#Angular basics
+
+nazwy selektorow w komponentach/dyrektywach 'snake case'
+    co robia selektroy z nazwa w nawiasach kwadratowych?
+
+komponenty naley dodawac do modulu, w polu 'declarations'
+
+w main.ts -> bootstrapModule
+
+Dyrektywy
+    BrowserModule posiada podstawowe dyrektywy Angulara (tj. ngFor)
+
+Architektura
+    podzial dytektyw/komponent per typ
+        dla malych projektow, przy wiekszych robi sie trudniej
+    podzial per feature
+        dla wiekszych projektow
+
+        https://itnext.io/ngrx-best-practices-for-enterprise-angular-applications-6f00bcdf36d7
